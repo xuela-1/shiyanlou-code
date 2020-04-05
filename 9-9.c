@@ -24,6 +24,7 @@ int main(){
     printf("x=%lf",x);
     */
 
+    /*
     char name;
     int age;
     scanf("%c",&name);//此时输入缓冲区有:F4
@@ -31,5 +32,13 @@ int main(){
 
     printf("name=%c\n",name);
     printf("age=%d\n",age);
+    */
+
+    char name;
+    //name = getchar();//scanf("%c",&name);
+   // printf("name=[%c]\n",name);
+    name = getc(stdin);
+    //putchar(name);//printf("%c",&name)
+    putc(name,stdout);
     return 0;
 }
