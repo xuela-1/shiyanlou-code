@@ -1,15 +1,21 @@
 #include <stdio.h>
 
 int main(void){
-    char int;//只支持输入一个字符
-    int password;//只支持使用整数作为密码
+    //定义变量,用来表示用户名和密码
+    // char name;//只支持输入一个字符
+    char name[32];
 
-    printf("账号:");
-    scanf("%c",&_name);//占位符,待输入name,&符号不可少
+    //int password;//只支持使用整数作为密码
+    char password[16];
 
-    printf("密码:");
-    scanf("%d",&password);//占位符,待输入password,&符号不可少
+    //输入用户名和密码
+    printf("请输入用户名:");
+    //scanf("%c",&name);//占位符,待输入name,&符号不可少
+    scanf("%s",&name);
 
+    printf("请输入密码:");
+    //scanf("%d",&password);//占位符,待输入password,&符号不可少
+    scanf("%s",&password);
 
     //判断账号和密码是否正确
     //待实现
